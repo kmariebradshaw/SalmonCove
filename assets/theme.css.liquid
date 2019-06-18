@@ -46,27 +46,25 @@ p, textarea, td, ul, li, .error_message, .success_message {
   font-weight: 400;
   font-style: normal;
 } 
-
-@media only screen and (min-width: 1100px) {
-  h1 { font-size: 67pt; } 
-  h2 { font-size: 34pt; } 
-  h3{ font-size: 16pt; } 
-  p, table { font-size: 14pt; } 
+.background-orange {background-color: #ffc13d;}
+.text-navy { color: #2c3485;}
+.text-white { color: #fff; }
+@media only screen and (min-width: 1366px) {
+  h1 {font-size: 36pt;}
+  #atf p { font-size: 22pt;  }
+}
+@media only screen and (min-width: 1100px) and (max-width: 1365px) {
+  h1 { font-size: 30pt; }
+  #atf p { font-size: 18pt; }
 } 
 @media only screen and (min-width: 800px) and (max-width: 1099px) {
-  h1 { font-size: 57pt; } 
-  h2 { font-size: 32pt; } 
-  h3{ font-size: 14pt; } 
-  p, table { font-size: 12pt; } 
+
 }
 @media only screen and (min-width: 589px) and (max-width: 799px) {
-  h1 { font-size: 43pt; } 
-  h2 { font-size: 30pt; } 
-  p, table { font-size: 12pt; }
+
 }
 @media only screen and (min-width: 589px) {
   .mo { display: none; }
-  .accent-padding { padding: 20px; }
 }
 @media only screen and (max-width: 588px) {
   h1 { font-size: 22pt; } 
@@ -78,5 +76,20 @@ p, textarea, td, ul, li, .error_message, .success_message {
   .half { width: 100%; }
 }
 
-
+/* index page */
+#atf .half { 
+  min-height: 400px;
+  padding: 50px;
+}
+#atf-prod-highlight {
+  background-image: url("{{'atf.png' | asset_url }}");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.button {
+    width: fit-content;
+    background: #2c3485;
+    padding: 10px 20px;
+    cursor: pointer;
+}
 
