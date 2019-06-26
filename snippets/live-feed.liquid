@@ -1,0 +1,65 @@
+
+<section class="tac" id="live-feed-wrapper">
+  <h3 class="nm">Check out our Live Feed</h3>
+  <h3 class="accent nmt">#SalmonCove</h3>
+  <section id="live-feed-snippet" class="fw">
+    <p class="left-arrow large clickable do">⌃</p>
+    <div>
+      <a href="https://www.instagram.com/blanesturisme/?hl=en" target="_blank">
+        <img src="{{'@b.png' | asset_url}}" />
+        <p class="tac subscript">@blanesturisme</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/p/BtbYUten7Qc/" target="_blank">
+      <img src="{{'@alpaca_girl1221.png' | asset_url}}" />
+      <p class="tac subscript">@alpaca_girl122</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/p/BqDUzUbF7Bg/" target="_blank">
+        <img src="{{'@alpaca.bee1.png' | asset_url}}" />
+        <p class="tac subscript">@alpaca.bee</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/p/BtXtC9aAPrj/" target="_blank">
+        <img src="{{'@alpacaloca.nl1.png' | asset_url}}" />
+        <p class="tac subscript">@alpacaloca.nl</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/p/Bsqt7f1HOjO/" target="_blank">
+        <img src="{{'@alpacamylife1.png' | asset_url}}" />
+        <p class="tac subscript">@alpacamylife</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/p/Btbo3jhl1d3/" target="_blank">
+        <img src="{{'@alpagasdumaquis1.png' | asset_url}}" />
+        <p class="tac subscript">@alpagasdumaquis</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/p/BtMPvDPl_RE/" target="_blank">
+        <img src="{{'@living_on_the_island1.png' | asset_url}}" />
+        <p class="tac subscript">@living_on_the_island</p>
+      </a>
+    </div>
+
+      <p class="right-arrow large clickable do">⌃</p>
+  </section>
+</section>
+
+
+<script>
+   $('p.large').on("click", function() { 
+    var wrapper = $('#live-feed-snippet'); 
+    if ($(this).hasClass('right-arrow')) { 
+      $(wrapper).animate( { scrollLeft: '+=300' })
+    }
+    else {
+      $(wrapper).animate({scrollLeft: '-=300'});  
+    }
+  }); 
+</script>

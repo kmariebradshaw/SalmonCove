@@ -75,6 +75,7 @@ p, textarea, td, ul, li, .error_message, .success_message {
     color:#2c3485;
     margin: 10px;
   }
+
 }
 @media only screen and (min-width: 589px) {
   .mo { display: none; }
@@ -85,6 +86,8 @@ p, textarea, td, ul, li, .error_message, .success_message {
     background-size: contain;
     background-position: center;
   }
+  #live-feed-wrapper { margin: 50px 0; }
+
 }
 @media only screen and (max-width: 588px) {
   h1 { font-size: 22pt; } 
@@ -101,6 +104,8 @@ p, textarea, td, ul, li, .error_message, .success_message {
     background-size: 90%;
     background-position: center left;
   }
+  #live-feed-wrapper { margin: 30px 0; }
+
   #atf .half {
     background-image: url("{{'atf.png' | asset_url}}");
     background-repeat: no-repeat;
@@ -195,14 +200,58 @@ nav p {
   transition: .25s ease-in-out;
 }
 
-#hamburger span:nth-child(1) {
-  top: 0px;
+/* live feed */
+.feed-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
 }
 
-#hamburger span:nth-child(2),#hamburger span:nth-child(3) {
-  top: 10px;
+.feed-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-#hamburger span:nth-child(4) {
-  top: 20px;
+.feed-column div {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+.feed-column div img { display: block; margin: 0 auto; }
+@media screen and (max-width: 799px) {
+  .feed-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+.left-arrow { transform: rotate(-90deg); }
+.right-arrow { transform: rotate(90deg); }
+#live-feed h4 { padding-top: 20px; }
+#live-feed-wrapper { overflow-y: hidden; }
+#live-feed-snippet{
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+    -ms-overflow-style: none;
+}
+#live-feed-snippet div {
+    display: inline-block;
+    margin-right: 1%;
+    width: 200px;
+    vertical-align: middle;
+}
+#live-feed-wrapper .left-arrow {
+    position: absolute;
+    left: 20px;
+    margin-top: 95px;
+}
+#live-feed-wrapper .right-arrow {
+    position: absolute;
+    right: 20px;
+    margin-top: -150px;
 }
