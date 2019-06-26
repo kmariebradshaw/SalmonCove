@@ -86,8 +86,9 @@ p, textarea, td, ul, li, .error_message, .success_message {
     background-size: contain;
     background-position: center;
   }
-  #live-feed-wrapper { margin: 50px 0; }
-
+#live-feed-wrapper {
+    padding: 50px 50px 50px 45px;
+}
 }
 @media only screen and (max-width: 588px) {
   h1 { font-size: 22pt; } 
@@ -104,8 +105,9 @@ p, textarea, td, ul, li, .error_message, .success_message {
     background-size: 90%;
     background-position: center left;
   }
-  #live-feed-wrapper { margin: 30px 0; }
-
+#live-feed-wrapper {
+    padding: 30px 30px 30px 15px;
+}
   #atf .half {
     background-image: url("{{'atf.png' | asset_url}}");
     background-repeat: no-repeat;
@@ -254,4 +256,8 @@ nav p {
     position: absolute;
     right: 20px;
     margin-top: -150px;
+}
+#live-feed-wrapper img {
+  width: 200px;
+  height: 200px;
 }
