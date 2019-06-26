@@ -1,0 +1,59 @@
+
+<section class="tac" id="live-feed-wrapper">
+  <h3 class="nm">Check out our Live Feed</h3>
+  <h3 class="accent nmt">#SalmonCove</h3>
+  <section id="live-feed-snippet" class="fw">
+    <p class="left-arrow large clickable do">⌃</p>
+    <div>
+      <a href="https://www.instagram.com/blanesturisme/?hl=en" target="_blank">
+        <img src="{{'@b.png' | asset_url}}" />
+        <p class="tac subscript">@blanesturisme</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/cornwallguide/?hl=en" target="_blank">
+      <img src="{{'@c.png' | asset_url}}" />
+      <p class="tac subscript">@cornwallguide</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/yacht.club.ins/?hl=en" target="_blank">
+        <img src="{{'@y.png' | asset_url}}" />
+        <p class="tac subscript">@yacht.club.ins</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/mvlakeresort/?hl=en/" target="_blank">
+        <img src="{{'@m.png' | asset_url}}" />
+        <p class="tac subscript">@mvlakeresort</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/alicanterunaway/?hl=en/" target="_blank">
+        <img src="{{'@a.png' | asset_url}}" />
+        <p class="tac subscript">@alicanterunaway</p>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/themultihullgroup/?hl=en" target="_blank">
+        <img src="{{'@t.png' | asset_url}}" />
+        <p class="tac subscript">@themultihullgroup</p>
+      </a>
+    </div>
+
+      <p class="right-arrow large clickable do">⌃</p>
+  </section>
+</section>
+
+
+<script>
+   $('p.large').on("click", function() { 
+    var wrapper = $('#live-feed-snippet'); 
+    if ($(this).hasClass('right-arrow')) { 
+      $(wrapper).animate( { scrollLeft: '+=300' })
+    }
+    else {
+      $(wrapper).animate({scrollLeft: '-=300'});  
+    }
+  }); 
+</script>
