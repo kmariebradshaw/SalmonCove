@@ -42,12 +42,12 @@ html { padding-bottom: 0 !important; }
   font-weight: 500;
   font-style: normal
 }
-h1,h2,h3,h4,h5,a, span, input, th, select { 
+h1,h2,h3,h4,h5,a, span, th, select { 
   font-family: futura-pt-bold, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-p, textarea, td, ul, li, .error_message, .success_message { 
+p, textarea, td, ul, li, .error_message, .success_message, input { 
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -276,3 +276,15 @@ footer { padding: 30px; }
 footer .third:not(:nth-of-type(3n)) {
   margin-right: 30px;
 }
+footer input{
+    background: transparent;
+    line-height: 2;
+    border: none;
+    padding: 0 5px;
+    color: white;
+}
+footer form { width: fit-content; }
+
+footer ::placeholder { color: white; }
+
+
