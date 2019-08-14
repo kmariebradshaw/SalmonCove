@@ -32,13 +32,13 @@ html { padding-bottom: 0 !important; }
   .accent-padding { padding: 50px; }
   .half { width: 50%;}
   #press-quote {margin: 20px auto;}
-  #product-detail-image, #atf { height: 500px;}
+  #product-detail-image, .atf { height: 500px;}
 }
 @media only screen and (max-width: 588px) {
   .accent-padding { padding: 20px; }
   .half { width: 100%; }
   .highlight { margin: 20px; }
-  #atf { height: 350px;}
+  .atf { height: 350px;}
   #product-detail-image { height: 200px;}
 }
 .tac { text-align: center; }
@@ -58,6 +58,7 @@ html { padding-bottom: 0 !important; }
 .ma { margin: 0 auto; }
 .jcfe { justify-content: flex-end; }
 .jcc { justify-content: center; }
+.fdc { flex-direction: column }
 .aifs { align-items: flex-start; }
 .text-white { color: white; }
 .text-navy { color: #2c3485; }
@@ -79,6 +80,11 @@ p, textarea, td, ul, li, .error_message, .success_message, input {
   font-weight: 400;
   font-style: normal;
 } 
+.accent {
+  font-family: chippewa-falls, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
 a { text-decoration: none; color: black;}
 @media only screen and (min-width: 589px) {
   .mo { display: none; }
@@ -115,14 +121,16 @@ nav p {
   color:#2c3485;
   margin: 20px;
 }
-.page { margin-top: 75px; }
+#logo-brandname { font-size: 12pt; }
+#logo-subscript { font-size: 10pt; }
+.page { margin-top: 110px; }
 #header { 
   position: fixed; 
   width: 100%;
   background-color: white;
-  height: 76px;
+  height: 110px;
   top: 0;
-  padding: 10px 10px 0 10px;
+  padding: 10px;
   box-sizing: border-box;
 }
 #cart { width: 45px; }
@@ -241,7 +249,16 @@ footer form { width: fit-content; }
 
 footer ::placeholder { color: white; }
 /* index page*/
-#atf { margin-bottom: 20px; }
+.atf { 
+  margin-bottom: 20px; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#atf-1 { background-image: url("{{'atf-1.jpg' | asset_url}}"); }
+#atf-2 {  background-image: url("{{'atf-2.jpg' | asset_url}}"); }
+#atf-3 {  background-image: url("{{'atf-3.jpg' | asset_url}}"); }
+#atf-4 {  background-image: url("{{'atf-4.jpg' | asset_url}}");}
 .spacer-top { margin-top: 20px; }
 #product-detail-image {
   background-image: url({{'hats.png' | asset_url}});

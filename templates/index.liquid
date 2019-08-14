@@ -1,5 +1,5 @@
 <div id="index-page" class="page">
-  <section class="flex-container-no background-gray" id="atf">
+  <section class="flex-container-no background-gray atf" id="atf-1">
     <div class="half accent-padding">
       <h1 class="ttu nm text-white">The Prep In Performance</h1>
       <p class="nmt text-white">As summer heats up, our PREP-FORMANCE Polos are ready to cool you down</p>
@@ -95,3 +95,21 @@
       {% endcomment %}
   </section>
 </div>
+
+<script>
+  $(document).ready(function () {
+  setInterval(
+    function() {
+    var backgroundImage = $('.atf').attr("id")
+    var x = backgroundImage.split('-')
+    var y = parseInt(x[1]) + 1 
+    if (y < 4) {
+      var newId = "atf-" + y 
+    }
+    else {
+      var newId = "atf-1"
+    }
+    $('.atf').attr("id", newId)
+    }, 5000 ) 
+  })
+</script>
