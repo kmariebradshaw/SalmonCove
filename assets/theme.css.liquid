@@ -19,11 +19,11 @@ html { padding-bottom: 0 !important; }
 .tar { text-align: right; }
 .fw { width: 100%; }
 .flex-container-no{
-  display: flex;
+  display: flex; 
   align-items: center;
 }
 @media only screen and (min-width: 589px) {
-  .flex-container {
+  .flex-container { 
     display: flex;
     align-items: center;
   }
@@ -31,7 +31,7 @@ html { padding-bottom: 0 !important; }
   .spacer-left { margin-left: 20px; }
   .accent-padding { padding: 50px; }
   .half { width: 50%;}
-  #press-quote {margin: 20px auto;}
+  #press-quote {margin: 40px auto 20px auto}
   #product-detail-image, .atf { height: 500px;}
 }
 @media only screen and (max-width: 588px) {
@@ -60,6 +60,7 @@ html { padding-bottom: 0 !important; }
 .jcc { justify-content: center; }
 .fdc { flex-direction: column }
 .aifs { align-items: flex-start; }
+.aife { align-items: flex-end; }
 .text-white { color: white; }
 .text-navy { color: #2c3485; }
 .background-lightgray { background-color: lightgray; }
@@ -255,6 +256,7 @@ footer ::placeholder { color: white; }
   background-position: center;
   background-size: cover;
 }
+.atf .fw { margin-bottom: 20px; }
 #atf-1 { background-image: url("{{'atf-1.jpg' | asset_url}}"); }
 #atf-2 {  background-image: url("{{'atf-2.jpg' | asset_url}}"); }
 #atf-3 {  background-image: url("{{'atf-3.jpg' | asset_url}}"); }
